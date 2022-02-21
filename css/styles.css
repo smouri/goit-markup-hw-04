@@ -38,6 +38,9 @@ ul li a {
   text-decoration: none;
   font-style: normal;
 }
+img {
+  display: block;
+}
 .link,
 .street,
 .logo,
@@ -81,6 +84,7 @@ address {
 }
 .site-nav {
   display: flex;
+  align-items: center;
 }
 .header .list {
   display: flex;
@@ -98,8 +102,8 @@ address {
 .site-nav .link {
   display: block;
   color: var(--main-text-color);
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   text-decoration: none;
   font-style: normal;
   font-weight: 500;
@@ -204,7 +208,9 @@ address {
 }
 .peculiarities-list {
   display: flex;
-  margin-bottom: 50px;
+}
+.peculiarities-list .item {
+  width: 270px;
 }
 .section .item {
   margin-right: 30px;
@@ -234,6 +240,7 @@ address {
   color: var(--secondary-text-color);
   font-size: 14px;
   line-height: 1.7;
+  letter-spacing: 0.03em;
 }
 .section-title {
   margin-bottom: 50px;
@@ -255,12 +262,10 @@ address {
   border-radius: 0px 0px 4px 4px;
 }
 .section-team .box {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding: 30px;
   background-color: var(--white);
 }
 .section-team .member {
-  margin-top: 10px;
   text-align: center;
   font-weight: 500;
   font-size: 16px;
@@ -276,9 +281,9 @@ address {
 .button-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
-.button-list .btn {
+.button-list .button-item:not(:last-child) {
   margin-right: 10px;
 }
 .portfolio .title {
@@ -318,6 +323,7 @@ address {
   background-color: var(--white);
 }
 .project-list .project-title {
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
