@@ -188,17 +188,14 @@ address {
   display: block;
   margin-top: 30px;
   margin-right: auto;
-  margin-bottom: 0;
   margin-left: auto;
   padding-top: 10px;
   padding-right: 32px;
   padding-bottom: 10px;
   padding-left: 32px;
   text-align: center;
-  font-family: Roboto;
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--white);
@@ -223,6 +220,16 @@ address {
 .section .item:not(:last-child) {
   margin-right: 30px;
 }
+.icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--btn-bg-color);
+  border-radius: 4px;
+}
 .section-team .item {
   display: flex;
   flex-direction: column;
@@ -234,16 +241,7 @@ address {
   border-radius: 0px 0px 4px 4px;
   
 }
-.icon-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
-  background-color: var(--btn-bg-color);
-  border-radius: 4px;
-}
+
 .section .title {
   margin-bottom: 10px;
 }
