@@ -113,19 +113,22 @@ address {
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
-
 }
+
 .site-nav .link.current {
   color: var(--accent-color);
 }
+
 .contact-list {
   display: flex;
   align-items: center;
   margin-left: auto;
 }
+
 .contact-list .item {
   margin-right: 30px;
 }
+
 .contact-list .link {
   color: var(--secondary-text-color);
   text-decoration: none;
@@ -135,9 +138,10 @@ address {
   font-size: 14px;
   line-height: 1.14;
 }
-.link svg:hover,
-.link svg:focus {
-  fill: var(--accent-color);
+
+.link:hover svg,
+.link:focus svg {
+  fill: currentColor;
 }
 .contact-list .link:hover,
 .contact-list .link:focus {
@@ -153,10 +157,6 @@ address {
   margin-right: 10px;
   fill: var(--secondary-text-color);
 }
-/* .mail:hover,
-.mail:focus {
-  color: var(--accent-color);
-} */
 /* Главный блок */
 .section.hero {
   background-color: var(--secondary-bg-color);
@@ -220,11 +220,19 @@ address {
 .peculiarities-list .item {
   width: 270px;
 }
-.section .item {
+.section .item:not(:last-child) {
   margin-right: 30px;
 }
-.section .item:last-child {
-  margin-right: 0;
+.section-team .item {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 270px;
+  justify-content: flex-end;
+  background-color: var(--white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  
 }
 .icon-wrap {
   display: flex;
